@@ -1,0 +1,170 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+
+<head>
+  <title>Verti by HTML5 UP</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+  <script src="{% static 'home/js/jquery.min.js' %}"></script>
+  <script src="{% static 'home/js/jquery.dropotron.min.js' %}"></script>
+  <script src="{% static 'home/js/skel.min.js' %}"></script>
+  <script src="{% static 'home/js/skel-layers.min.js' %}"></script>
+  <script src="{% static 'home/js/init.js' %}"></script>
+  <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+</head>
+
+<!-- Body -->
+<div class="homescreen">
+  <div id="banner-wrapper">
+    <div id="banner" class="box container">
+      <!--div class="row"!-->
+      <!--div class="7u"!-->
+      <h2>Welcome to Talk Tenant</h2>
+      <p>
+        How do you know the house you are planning to stay is a good fit for you
+      </p>
+      <p>We will give you the answer</p>
+      <!--/div-->
+      <!--div class="5u">
+							<ul>
+								<li><a href="{% url 'login' %}" class="button big icon fa-arrow-circle-right">Login</a></li>
+								<li><a href="#content" class="button alt big icon fa-question-circle">More info</a></li>
+							</ul>
+						</div-->
+      <!--/div-->
+    </div>
+  </div>
+
+  <!-- Main -->
+  <div id="main-wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="4u">
+          <!-- Sidebar -->
+          <div id="sidebar">
+            <section class="widget thumbnails">
+              <h3>Reviews</h3>
+              <div class="grid">
+                <div class="row no-collapse 50%">
+                  <div class="6u">
+                    <a href="#" class="image fit"
+                      ><img src="{% static 'home/images/pic04.jpg' %}" alt=""
+                    /></a>
+                  </div>
+                  <div class="6u">
+                    <a href="#" class="image fit"
+                      ><img src="{% static 'home/images/pic05.jpg' %}" alt=""
+                    /></a>
+                  </div>
+                </div>
+                <div class="row no-collapse 50%">
+                  <div class="6u">
+                    <a href="#" class="image fit"
+                      ><img src="{% static 'home/images/pic06.jpg' %}" alt=""
+                    /></a>
+                  </div>
+                  <div class="6u">
+                    <a href="#" class="image fit"
+                      ><img src="{% static 'home/images/pic07.jpg' %}" alt=""
+                    /></a>
+                  </div>
+                </div>
+              </div>
+              <a href="#" class="button icon fa-file-text-o">More</a>
+            </section>
+          </div>
+        </div>
+        <div class="8u important(collapse)">
+          <!-- Content -->
+          <div id="content">
+            <section class="last">
+              <h2>Rate the Property / House Owner</h2>
+              <p>
+				Leave a review about your renting experience.            
+              </p>
+              <p>
+				Review your rental property.
+              </p>
+			  <p>
+				Rate your House Owner.
+              </p>
+			  
+              
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Find a Review -->
+  <div id="banner-wrapper">
+    <div id="banner" class="box container">
+		<p>
+			<h1>Find a Review</h1>
+
+			Search for reviews and find your next dream home. 
+			Find reviewed properties and local information.
+		</p>
+      
+    </div>
+  </div>
+
+  <div id="main-wrapper">
+	HOW TO RATE PROPERTY??
+  </div>
+    <!-- Features -->
+	<div id="features-wrapper">
+		<div class="container">
+		  <div class="row">
+			<div class="4u">
+			  <!-- Box -->
+			  <section class="box feature">
+				<a href="#" class="image featured"
+				  ><img src="{% static 'home/images/pic01.jpg' %}" alt=""
+				/></a>
+				<div class="inner">
+				  <header>
+					<h2>Register & Verify your email</h2>
+				  </header>
+				  
+				</div>
+			  </section>
+			</div>
+			<div class="4u">
+			  <!-- Box -->
+			  <section class="box feature">
+				<a href="#" class="image featured"
+				  ><img src="{% static 'home/images/pic02.jpg' %}" alt=""
+				/></a>
+				<div class="inner">
+				  <header>
+					<h2>Once verified, rate your property</h2>
+					
+				  </header>
+				  
+				</div>
+			  </section>
+			</div>
+			<div class="4u">
+			  <!-- Box -->
+			  <section class="box feature last">
+				<a href="#" class="image featured"
+				  ><img src="{% static 'home/images/pic03.jpg' %}" alt=""
+				/></a>
+				<div class="inner">
+				  <header>
+					<h2>Viola, other can see your review now.</h2>
+					
+				  </header>
+				  
+				</div>
+			  </section>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	
+</div>
+
+{% endblock content %}
